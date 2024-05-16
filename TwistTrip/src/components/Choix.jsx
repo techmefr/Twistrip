@@ -28,24 +28,28 @@ export default function Choix() {
 					onClick={() => handleOptionClick("culturelle")}
 				>
 					<img src={temple} alt="Culturelle" />
+					<p className="overlay">Culturelle</p>	
 				</div>
 				<div
 					className={`option ${selectedOption === "humanitaire" ? "selected" : ""} ${selectedOption && selectedOption !== "humanitaire" ? "not-selected" : ""}`}
 					onClick={() => handleOptionClick("humanitaire")}
 				>
 					<img src={humanitaire} alt="Humanitaire" />
+					<p className="overlay">Humanitaire</p>
 				</div>
 				<div
 					className={`option ${selectedOption === "sportif" ? "selected" : ""} ${selectedOption && selectedOption !== "sportif" ? "not-selected" : ""}`}
 					onClick={() => handleOptionClick("sportif")}
 				>
 					<img src={travel} alt="Sportif" />
+					<p className="overlay">sportif</p>
 				</div>
 				<div
 					className={`option ${selectedOption === "se-ressourcer" ? "selected" : ""} ${selectedOption && selectedOption !== "se-ressourcer" ? "not-selected" : ""}`}
 					onClick={() => handleOptionClick("se-ressourcer")}
 				>
 					<img src={meditate} alt="Se Ressourcer" />
+					<p className="overlay">Se-ressourcer</p>
 				</div>
 			</div>
 			<form onSubmit={handleSubmit} className="vacation-form">
