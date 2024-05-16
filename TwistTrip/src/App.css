@@ -5,8 +5,8 @@
 
 :root {
   /*////colors//////////*/
-  --primary-color: #32bc4b;
-  --secondary-color: #daf9d8;
+  --primary-color: #daf9d8;
+  --secondary-color: #32bc4b;
   --bg-color: #1e4875;
   --container-color: #def1ff;
 
@@ -30,6 +30,45 @@ body {
   background-color: var(--bg-color);
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+}
+
+.siteLogo {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-container > img {
+  width: 40%;
+  left: 30%;
+}
+
 h1 {
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -46,9 +85,4 @@ p {
   font-family: var(--secondary-font);
   font-size: var(--p-font-size);
   color: var(--secondary-color);
-}
-
-img {
-  width: 50vh;
-  height: auto;
 }
