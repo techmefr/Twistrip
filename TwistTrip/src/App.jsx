@@ -1,14 +1,15 @@
-import { useState } from 'react'
 import Choix from "./components/Choix"
+import "./App.css";
+import Homepage from "./components/Homepage";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-	  <Choix />
+      <Homepage />
+      <Choix />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
