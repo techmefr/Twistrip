@@ -47,3 +47,8 @@ p {
   font-size: var(--p-font-size);
   color: var(--secondary-color);
 }
+
+img {
+  width: 50vh;
+  height: auto;
+}
