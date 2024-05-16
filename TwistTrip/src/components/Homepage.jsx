@@ -7,11 +7,8 @@ export default function HomePage() {
       <div className="hero-container">
         <img src={logo} className="siteLogo" alt="siteLogo" />
         <video className="heroVideo" src={HeroVideo} autoPlay muted loop />
-        <div className="nav-container">
-          <h1 className="title">Hello</h1>
-          <h2 className="subtitle">good day</h2>
-          <p className="paragraphe">text</p>
-        </div>
+        <h1 className="paragraphe">Transformez vos vacances en aventure !</h1>
+        <h2>Payez, partez, regrettez...</h2>
       </div>
     </>
   );

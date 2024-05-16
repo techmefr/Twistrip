@@ -14,9 +14,9 @@
   --primary-font: "Kavoon", serif;
   --secondary-font: "Roboto", sans-serif;
 
-  --h1-font-size: 4rem;
+  --h1-font-size: 3rem;
   --h2-font-size: 2.5rem;
-  --h3-font-size: 1.6rem;
+  --h3-font-size: 0.6rem;
   --p-font-size: 1rem;
 }
 
@@ -48,15 +48,6 @@ body {
   left: 0;
 }
 
-.nav-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 1rem;
-}
-
 .siteLogo {
   position: relative;
   flex-direction: column;
@@ -70,19 +61,21 @@ body {
 }
 
 h1 {
-  color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 8rem;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
-  color: var(--secondary-color);
-  font-family: var(--primary-font);
-  font-size: var(--h2-font-size);
-}
-
-p {
   font-family: var(--secondary-font);
-  font-size: var(--p-font-size);
+  font-size: var(--h2-font-size);
   color: var(--secondary-color);
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
 }
