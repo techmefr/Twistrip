@@ -1,0 +1,29 @@
+/* Styles for the loading spinner */
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border: 8px solid transparent;
+    border-top: 8px solid #f44336; /* Red */
+    border-right: 8px solid #2196F3; /* Blue */
+    border-bottom: 8px solid #4CAF50; /* Green */
+    border-left: 8px solid #FFEB3B; /* Yellow */
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
