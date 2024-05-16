@@ -1,4 +1,3 @@
-import React from "react";
 import HeroVideo from "../assets/Images/Hero_video.mp4";
 import logo from "../assets/logo/logoTwistTrip.png";
 
