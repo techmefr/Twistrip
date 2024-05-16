@@ -1,8 +1,10 @@
 import React from 'react';
 import HeroVideo from '../assets/Images/Hero_video.mp4';
 import logo from '../assets/logo/logoTwistTrip.png';
+import FlashAnimation from './FlashAnimation';
 
 export default function HomePage() {
+
   return (
     <>
       <div className="hero-container">
@@ -12,6 +14,7 @@ export default function HomePage() {
           <h1 className='title'>Hello</h1>
           <h2 className='subtitle'>good day</h2>
           <p className='paragraphe'>text</p>
+          <FlashAnimation className='flash' />
         </div>
       </div>
     </>

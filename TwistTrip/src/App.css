@@ -86,3 +86,13 @@ p {
   font-size: var(--p-font-size);
   color: var(--secondary-color);
 }
+
+.flash {
+  /* position: absolute;
+  bottom: 10px;
+  width: 15px;
+  z-index: 1; */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
