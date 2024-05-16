@@ -5,8 +5,8 @@
 
 :root {
   /*////colors//////////*/
-  --primary-color: #32bc4b;
-  --secondary-color: #daf9d8;
+  --primary-color: #daf9d8;
+  --secondary-color: #32bc4b;
   --bg-color: #1e4875;
   --container-color: #def1ff;
 
@@ -14,9 +14,9 @@
   --primary-font: "Kavoon", serif;
   --secondary-font: "Roboto", sans-serif;
 
-  --h1-font-size: 4rem;
+  --h1-font-size: 3rem;
   --h2-font-size: 2.5rem;
-  --h3-font-size: 1.6rem;
+  --h3-font-size: 0.6rem;
   --p-font-size: 1rem;
 }
 
@@ -30,20 +30,63 @@ body {
   background-color: var(--bg-color);
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.heroVideo {
+  width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.siteLogo {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-container>img {
+  width: 40%;
+  left: 30%;
+}
+
 h1 {
-  color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 15rem;
+  width: 100%;
+  text-align: center;
 }
 
-h2 {
-  color: var(--secondary-color);
-  font-family: var(--primary-font);
-  font-size: var(--h2-font-size);
-}
-
-p {
+.heroParagraph {
   font-family: var(--secondary-font);
   font-size: var(--p-font-size);
   color: var(--secondary-color);
+  position: absolute;
+  bottom: 13rem;
+  width: 100%;
+  text-align: center;
+}
+
+.flash {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }

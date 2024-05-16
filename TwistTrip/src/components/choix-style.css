@@ -1,75 +1,84 @@
-.choix-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.choix-h2 {
+  font-family: var(--primary-font);
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-
-
 .choix-options {
-    text-align: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: var(--p-font-size);
 }
 
 .options {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .option {
-    border: 2px solid transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: border 0.3s, opacity 0.3s;
-    cursor: pointer;
-    display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border 0.3s, opacity 0.3s;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .option img {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 35vw;
-    height: auto;
-    object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.option img:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
 }
 
 .option.selected {
-    border: 2px solid #007BFF;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+  border: 2px solid #007BFF;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
 }
 
 .option.not-selected {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .vacation-form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .option .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 3px;
-    opacity: 1;
-    transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 3px;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 @media screen and (max-width: 480px) {
-    .options {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .option {
-        width: 100%;
-    }
+  .options {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .option img {
-        width: 100%;
-        height: auto;
-    }
+  .option {
+    width: 100%;
+  }
+
+  .option img {
+    width: 100%;
+    height: auto;
+  }
 }

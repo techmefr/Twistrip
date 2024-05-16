@@ -1,3 +1,4 @@
+
 import { Suspense, lazy } from 'react';
 import "./App.css";
 import "./sipper.css";
@@ -10,7 +11,6 @@ function App() {
 
   return (
     <>
-      <Homepage />
       <Homepage />
       <Suspense fallback={<div className="spinner-container"><div className="spinner"></div></div>}>
         <Choix />
