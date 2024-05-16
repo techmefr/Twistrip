@@ -79,3 +79,19 @@ h2 {
   width: 100%;
   text-align: center;
 }
+
+.flash {
+  width: 50px;
+  /* Set the desired width */
+  height: 50px;
+  /* Set the desired height */
+  position: absolute;
+  bottom: 2rem;
+  /* Adjust the position as needed */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Center adjustment */
+  z-index: 2;
+  /* Ensure it's above the video */
+}
