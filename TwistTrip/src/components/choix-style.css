@@ -1,0 +1,49 @@
+.choix-h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.choix-options {
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border 0.3s, opacity 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.option img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.option.selected {
+    border: 2px solid #007BFF;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.option.not-selected {
+    opacity: 0.5;
+}
+
+.vacation-form {
+    margin-top: 20px;
+}
