@@ -21,8 +21,12 @@ const prizes = [
     text: "Pêche en Chine",
   },
   {
-    image: "https://i.ibb.co/ZLHZgKf/good-0.png",
-    text: "Monoblock Apple iMac 27",
+    image: "./src/assets/images/desert.png",
+    text: "Trekking dans le désert",
+  },
+  {
+    image: "./src/assets/images/india.png",
+    text: "",
   },
 ];
 

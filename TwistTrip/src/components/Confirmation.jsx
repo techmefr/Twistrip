@@ -15,8 +15,8 @@ function Confirmation() {
         ))}
       </ul>
       <div className="ticket">
-        <span className="airline">Lufthansa</span>
-        <span className="airline airlineslip">Lufthansa</span>
+        <span className="airline">Air Crash</span>
+        <span className="airline airlineslip">Air Crash</span>
         <span className="boarding">RESERVATION</span>
         <div className="content">
           <span className="jfk">LYON</span>
@@ -87,7 +87,7 @@ function Confirmation() {
           </span>
           <span className="sfo sfoslip">SFO</span>
           <div className="sub-content">
-            <span className="watermark">Lufthansa</span>
+            <span className="watermark">Air Crash</span>
             <span className="name">
               PASSAGER
               <br />
