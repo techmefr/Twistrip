@@ -6,6 +6,7 @@ import 'react-roulette-pro/dist/index.css';
 const prizes = [
   {
     image: 'https://i.ibb.co/6Z6Xm9d/good-1.png',
+    text:'toto',
   },
   {
     image: 'https://i.ibb.co/T1M05LR/good-2.png',
