@@ -16,7 +16,7 @@ function App() {
     <>
       <Homepage />
       <Payement />
-      <VisaCard />
+      {/* <VisaCard /> */}
       {/* <Suspense fallback={<div className="spinner-container"><div className="spinner"></div></div>}> */}
       <Choix />
       {/*< </Suspense> */}

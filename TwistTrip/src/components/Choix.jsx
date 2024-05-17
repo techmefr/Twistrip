@@ -24,50 +24,42 @@ export default function Choix() {
       <h2 className="choix-h2">Choisissez votre type de vacances</h2>
       <div className="choix-options">
         <div
-          className={`option ${
-            selectedOption === "culturelle" ? "selected" : ""
-          } ${
-            selectedOption && selectedOption !== "culturelle"
+          className={`option ${selectedOption === "culturelle" ? "selected" : ""
+            } ${selectedOption && selectedOption !== "culturelle"
               ? "not-selected"
               : ""
-          }`}
+            }`}
           onClick={() => handleOptionClick("culturelle")}
         >
           <img src={temple} alt="Culturelle" />
           <p className="overlay">Culturelle</p>
         </div>
         <div
-          className={`option ${
-            selectedOption === "humanitaire" ? "selected" : ""
-          } ${
-            selectedOption && selectedOption !== "humanitaire"
+          className={`option ${selectedOption === "humanitaire" ? "selected" : ""
+            } ${selectedOption && selectedOption !== "humanitaire"
               ? "not-selected"
               : ""
-          }`}
+            }`}
           onClick={() => handleOptionClick("humanitaire")}
         >
           <img src={humanitaire} alt="Humanitaire" />
           <p className="overlay">Humanitaire</p>
         </div>
         <div
-          className={`option ${
-            selectedOption === "sportif" ? "selected" : ""
-          } ${
-            selectedOption && selectedOption !== "sportif" ? "not-selected" : ""
-          }`}
+          className={`option ${selectedOption === "sportif" ? "selected" : ""
+            } ${selectedOption && selectedOption !== "sportif" ? "not-selected" : ""
+            }`}
           onClick={() => handleOptionClick("sportif")}
         >
           <img src={travel} alt="Sportif" />
           <p className="overlay">Sportif</p>
         </div>
         <div
-          className={`option ${
-            selectedOption === "se-ressourcer" ? "selected" : ""
-          } ${
-            selectedOption && selectedOption !== "se-ressourcer"
+          className={`option ${selectedOption === "se-ressourcer" ? "selected" : ""
+            } ${selectedOption && selectedOption !== "se-ressourcer"
               ? "not-selected"
               : ""
-          }`}
+            }`}
           onClick={() => handleOptionClick("se-ressourcer")}
         >
           <img src={meditate} alt="Se Ressourcer" />

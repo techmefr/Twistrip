@@ -21,6 +21,7 @@ input {
 input:focus {
   border-color: #007bff;
 }
+
 .radio-button-container {
   display: flex;
   align-items: center;
@@ -64,14 +65,14 @@ input:focus {
   transition: all 0.3s ease;
 }
 
-.radio-button__input:checked + .radio-button__label .radio-button__custom {
+.radio-button__input:checked+.radio-button__label .radio-button__custom {
   background-color: #4c8bf5;
   border-color: transparent;
   transform: scale(0.8);
   box-shadow: 0 0 20px #4c8bf580;
 }
 
-.radio-button__input:checked + .radio-button__label {
+.radio-button__input:checked+.radio-button__label {
   color: #4c8bf5;
 }
 
@@ -80,13 +81,14 @@ input:focus {
   border-color: #4c8bf5;
   box-shadow: 0 0 20px #4c8bf580;
 }
+
 .Btn {
   width: 130px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(15, 15, 15);
+  background-color: transparent;
   border: none;
   color: white;
   font-weight: 600;
@@ -95,6 +97,7 @@ input:focus {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
   transition-duration: 0.3s;
 }
 
@@ -106,22 +109,9 @@ input:focus {
   fill: white;
 }
 
-.Btn::before {
-  width: calc(100% + 40px);
-  aspect-ratio: 1/1;
-  position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  left: -20px;
-  top: 50%;
-  transform: translate(-150%, -50%);
-  transition-duration: 0.5s;
-  mix-blend-mode: difference;
-}
-
 .Btn:hover::before {
   transform: translate(0, -50%);
+  border-radius: 8px;
 }
 
 .Btn:active {
