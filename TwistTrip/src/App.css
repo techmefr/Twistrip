@@ -31,11 +31,16 @@ body {
 }
 
 button {
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   flex-shrink: 0;
   font-family: var(--secondary-font);
@@ -45,14 +50,15 @@ button {
   padding: 0 1.6rem;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
+  transition: all 0.5s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
 button:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #6070ea 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #6070ea 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
@@ -61,7 +67,6 @@ button:hover {
     padding: 0 2.6rem;
   }
 }
-
 
 .hero-container {
   display: flex;
@@ -89,7 +94,7 @@ button:hover {
   z-index: 2;
 }
 
-.hero-container>img {
+.hero-container > img {
   width: 40%;
   left: 30%;
 }
@@ -128,4 +133,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+html {
+  height: 100dvh;
+  width: 100dvw;
+}
+#Confirmation {
+  background-image: url("./src//assets/images/golf.png");
 }

@@ -51,7 +51,7 @@ function Confirmation() {
               </g>
             </svg>
           </span>
-          <span className="sfo">SFO</span>
+          <span className="sfo">RUH</span>
 
           <span className="jfk jfkslip">LYON</span>
           <span className="plane planeslip">
@@ -85,7 +85,7 @@ function Confirmation() {
               </g>
             </svg>
           </span>
-          <span className="sfo sfoslip">SFO</span>
+          <span className="sfo sfoslip">RUH</span>
           <div className="sub-content">
             <span className="watermark">Air Crash</span>
             <span className="name">

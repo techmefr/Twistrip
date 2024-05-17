@@ -110,6 +110,10 @@ function Roulette() {
     setStart((prevState) => !prevState);
   };
 
+  const handlePrizeDefined = () => {
+    alert("Vous partez arroser les terrains de Golf en Arabie Saoudite");
+  };
+
   return (
     <>
       <div className="roulette">
@@ -117,8 +121,8 @@ function Roulette() {
           prizes={prizeList}
           prizeIndex={prizeIndex}
           start={start}
+          onPrizeDefined={handlePrizeDefined}
           soundWhileSpinning="https://react-roulette-pro.ivanadmaers.com/assets/f3722b4574da2a35a4ef.mp3"
-          onPrizeDefined={{ prizesWithText: true }}
         />
         <button onClick={handleStart}>Start</button>
       </div>
