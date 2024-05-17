@@ -1,3 +1,4 @@
+import React from "react";
 import HeroVideo from "../assets/images/Hero_video.mp4";
 import logo from "../assets/logo/logoTwistTrip.png";
 import FlashAnimation from "./FlashAnimation";

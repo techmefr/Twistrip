@@ -71,13 +71,15 @@ function Roulette() {
 
   return (
     <>
-      <RoulettePro
-        prizes={prizeList}
-        prizeIndex={prizeIndex}
-        start={start}
-        onPrizeDefined={handlePrizeDefined}
-      />
-      <button onClick={handleStart}>Start</button>
+      <div className='roulette'>
+        <RoulettePro
+          prizes={prizeList}
+          prizeIndex={prizeIndex}
+          start={start}
+          onPrizeDefined={handlePrizeDefined}
+        />
+        <button onClick={handleStart}>Start</button>
+      </div>
     </>
   );
 }
