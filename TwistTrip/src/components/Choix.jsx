@@ -63,7 +63,7 @@ export default function Choix() {
           onClick={() => handleOptionClick("se-ressourcer")}
         >
           <img src={meditate} alt="Se Ressourcer" />
-          <p className="overlay">Se-ressourcer</p>
+          <p className="overlay">Se ressourcer</p>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="vacation-form">
