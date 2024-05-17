@@ -25,8 +25,53 @@ const prizes = [
     text: "Trekking dans le désert",
   },
   {
-    image: "./src/assets/images/india.png",
-    text: "",
+    image: "./src/assets/images/india.jpg",
+    text: "Nettoyage du Gange",
+  },
+
+  {
+    image: "./src/assets/images/golf.png",
+    text: "Arrosage d'un golf",
+  },
+  {
+    image: "./src/assets/images/ireland.png",
+    text: "Bain de boue en Ireland",
+  },
+  {
+    image: "./src/assets/images/mexico.png",
+    text: "Chasse au trésor dans une décharge",
+  },
+  {
+    image: "./src/assets/images/north-korea.png",
+    text: "Découverte de la Corée du Nord",
+  },
+  {
+    image: "./src/assets/images/phallus.png",
+    text: "Nettoyage au musée du phallus en Island",
+  },
+  {
+    image: "./src/assets/images/prison.png",
+    text: "Méditation dans une prison en Turquie",
+  },
+  {
+    image: "./src/assets/images/restaurant.png",
+    text: "Serveur dans un buffet à volonté",
+  },
+  {
+    image: "./src/assets/images/rice.jpg",
+    text: "Travail dans une rizière",
+  },
+  {
+    image: "./src/assets/images/somalia.png",
+    text: "Régime en Somalie",
+  },
+  {
+    image: "./src/assets/images/tchernobyl.png",
+    text: "Rave party à Tchernobyl",
+  },
+  {
+    image: "./src/assets/images/turkey.png",
+    text: "Confection de kebab en Turquie",
   },
 ];
 
@@ -40,7 +85,7 @@ const reproductionArray = (array = [], length = 0) => [
 
 const reproducedPrizeList = [
   ...prizes,
-  ...reproductionArray(prizes, prizes.length * 3),
+  ...reproductionArray(prizes, prizes.length * 18),
   ...prizes,
   ...reproductionArray(prizes, prizes.length),
 ];
@@ -65,18 +110,15 @@ function Roulette() {
     setStart((prevState) => !prevState);
   };
 
-  const handlePrizeDefined = () => {
-    console.log("🥳 Prize defined! 🥳");
-  };
-
   return (
     <>
-      <div className='roulette'>
+      <div className="roulette">
         <RoulettePro
           prizes={prizeList}
           prizeIndex={prizeIndex}
           start={start}
-          onPrizeDefined={handlePrizeDefined}
+          soundWhileSpinning="https://react-roulette-pro.ivanadmaers.com/assets/f3722b4574da2a35a4ef.mp3"
+          onPrizeDefined={{ prizesWithText: true }}
         />
         <button onClick={handleStart}>Start</button>
       </div>
