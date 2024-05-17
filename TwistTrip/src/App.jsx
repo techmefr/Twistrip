@@ -15,7 +15,7 @@ import Confirmation from "./components/Confirmation";
 function App() {
   const [currentComponent, setCurrentComponent] = useState('Homepage');
 
-  const components = ['Homepage', 'Payement', 'VisaCard', 'Choix', 'Roulette', 'Confirmation'];
+  const components = ['Homepage', 'Payement', 'Choix', 'Roulette', 'Confirmation'];
 
   const nextComponent = () => {
     const currentIndex = components.indexOf(currentComponent);
@@ -38,12 +38,12 @@ function App() {
       >
         <Payement />
       </section>
-      <section
+      {/* <section
         id='VisaCard'
         style={{ display: currentComponent === "VisaCard" ? "block" : "none" }}
       >
         <VisaCard />
-      </section>
+      </section> */}
       <section
         id='Choix'
         style={{ display: currentComponent === "Choix" ? "block" : "none" }}
