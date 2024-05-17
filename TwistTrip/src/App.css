@@ -90,3 +90,32 @@ h1 {
   transform: translateX(-50%);
   z-index: 2;
 }
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.button-container button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
