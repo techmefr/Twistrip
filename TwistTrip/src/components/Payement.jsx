@@ -14,7 +14,6 @@ const PaymentForm = () => {
 
   const handleInputChange = (evt) => {
     const { name, value } = evt.target;
-
     setState((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -23,7 +22,7 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="Card-container">
+    <div className="card-container">
       <div className="radio-button-container">
         <div className="radio-button">
           <input
@@ -70,9 +69,9 @@ const PaymentForm = () => {
           name={state.name}
           focused={state.focus}
         />
-
         <form>
           <div className="input-container">
+            <label htmlFor="number">Numéro de carte</label>
             <input
               type="number"
               name="number"
@@ -81,9 +80,9 @@ const PaymentForm = () => {
               onChange={handleInputChange}
               onFocus={handleInputFocus}
             />
-            <label htmlFor="number">Numéro de carte</label>
           </div>
           <div className="input-container">
+            <label htmlFor="expiry">Date de fin de validité</label>
             <input
               type="number"
               name="expiry"
@@ -92,9 +91,9 @@ const PaymentForm = () => {
               onChange={handleInputChange}
               onFocus={handleInputFocus}
             />
-            <label htmlFor="expiry">Date de fin de validité</label>
           </div>
           <div className="input-container">
+            <label htmlFor="name">Nom</label>
             <input
               type="text"
               name="name"
@@ -103,9 +102,9 @@ const PaymentForm = () => {
               onChange={handleInputChange}
               onFocus={handleInputFocus}
             />
-            <label htmlFor="name">Nom</label>
           </div>
           <div className="input-container">
+            <label htmlFor="cvc">CVC</label>
             <input
               type="number"
               name="cvc"
@@ -114,16 +113,17 @@ const PaymentForm = () => {
               onChange={handleInputChange}
               onFocus={handleInputFocus}
             />
-            <label htmlFor="cvc">CVC</label>
           </div>
         </form>
       </div>
-      <button className="Btn">
-        Pay
-        <svg viewBox="0 0 576 512" className="svgIcon">
-          <path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path>
-        </svg>
-      </button>{" "}
+      <div className="button-container">
+        <button className="Btn">
+          Pay
+          <svg viewBox="0 0 576 512" className="svgIcon">
+            <path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };
