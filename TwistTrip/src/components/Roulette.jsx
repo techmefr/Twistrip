@@ -1,23 +1,28 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import RoulettePro from 'react-roulette-pro';
-import 'react-roulette-pro/dist/index.css';
+import RoulettePro from "react-roulette-pro";
+import "react-roulette-pro/dist/index.css";
 
 const prizes = [
   {
-    image: 'https://i.ibb.co/6Z6Xm9d/good-1.png',
+    image: "./src/assets/images/africa.png",
+    text: "Construire un bâtiment en Afrique",
   },
   {
-    image: 'https://i.ibb.co/T1M05LR/good-2.png',
+    image: "./src/assets/images/alaska.png",
+    text: "Pêche sur un chalutier en Alaska",
   },
   {
-    image: 'https://i.ibb.co/Qbm8cNL/good-3.png',
+    image: "./src/assets/images/boudhism.png",
+    text: "Temple bouddhiste",
   },
   {
-    image: 'https://i.ibb.co/5Tpfs6W/good-4.png',
+    image: "./src/assets/images/china.jpg",
+    text: "Pêche en Chine",
   },
   {
-    image: 'https://i.ibb.co/64k8D1c/good-5.png',
+    image: "https://i.ibb.co/ZLHZgKf/good-0.png",
+    text: "Monoblock Apple iMac 27",
   },
 ];
 
@@ -25,7 +30,7 @@ const winPrizeIndex = 0;
 
 const reproductionArray = (array = [], length = 0) => [
   ...Array(length)
-    .fill('_')
+    .fill("_")
     .map(() => array[Math.floor(Math.random() * array.length)]),
 ];
 
@@ -41,7 +46,10 @@ const generateId = () =>
 
 const prizeList = reproducedPrizeList.map((prize) => ({
   ...prize,
-  id: typeof crypto.randomUUID === 'function' ? crypto.randomUUID() : generateId(),
+  id:
+    typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : generateId(),
 }));
 
 function Roulette() {
@@ -54,7 +62,7 @@ function Roulette() {
   };
 
   const handlePrizeDefined = () => {
-    console.log('🥳 Prize defined! 🥳');
+    console.log("🥳 Prize defined! 🥳");
   };
 
   return (

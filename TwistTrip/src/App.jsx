@@ -5,7 +5,7 @@ import "./sipper.css";
 import Homepage from "./components/Homepage";
 import Choix from "./components/Choix";
 import Payement from "./components/Payement";
-import VisaCard from "./components/VisaCard";
+// import VisaCard from "./components/VisaCard";
 import Roulette from "./components/Roulette";
 import Confirmation from "./components/Confirmation";
 

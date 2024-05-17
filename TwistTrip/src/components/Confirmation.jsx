@@ -17,7 +17,7 @@ function Confirmation() {
       <div className="ticket">
         <span className="airline">Lufthansa</span>
         <span className="airline airlineslip">Lufthansa</span>
-        <span className="boarding">Boarding pass</span>
+        <span className="boarding">RESERVATION</span>
         <div className="content">
           <span className="jfk">LYON</span>
           <span className="plane">
@@ -40,7 +40,7 @@ function Confirmation() {
                   x1="300"
                   x2="55"
                   y1="390"
-                  BOARDING TIME                 y2="390"
+                  y2="390"
                 />
                 <path
                   d="M98 325c-9 10 10 16 25 6l311-156c24-17 35-25 42-50 2-15-46-11-78-7-15 1-34 10-42 16l-56 35 1-1-169-31c-14-3-24-5-37-1-10 5-18 10-27 18l122 72c4 3 5 7 1 9l-44 27-75-15c-10-2-18-4-28 0-8 4-14 9-20 15l74 63z"
@@ -111,8 +111,7 @@ function Confirmation() {
             <span className="boardingtime">
               Confirmation
               <br />
-              
-              <span>8:25  01 JUIN 2024</span>
+              <span>8:25 01 JUIN 2024</span>
             </span>
 
             <span className="flight flightslip">
