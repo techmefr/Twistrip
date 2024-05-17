@@ -138,6 +138,7 @@ html {
   height: 100dvh;
   width: 100dvw;
 }
-#Confirmation {
-  background-image: url("./src//assets/images/golf.png");
+.golf {
+  width: 100%;
+  height: 150%;
 }
